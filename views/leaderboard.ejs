@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Alata|Nunito|Slabo+27px&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>COMP 20 - FINAL PROJECT</title>
+        <style type="text/css">
+            body, html {
+            background-color: #1c7eed;
+            color: #FFF;
+            font-family: sans-serif;
+            cursor: default;
+        }
+        .leadersBox {
+            margin-top: 3%;
+            padding: 15px;
+            width: 60%;
+            background-color: #FFF;
+            font-family: Alata;
+        }
+        .leader {
+            color: #FFF;
+            background-color: #770FD6;
+            border-style: groove;
+            border-width: 3px;
+            border-color: #770FD6;
+            width: 80%;
+            height: 30px;
+            margin: 17px;
+            padding-top: 2px;
+        }
+        .leader:hover {
+            color: #A3F711;
+            background-color: #1c7eed;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #0FD679;
+            width: 80%;
+            height: 30px;
+            margin: 17px;
+            padding-top: 2px;
+
+        }
+        .button {
+            width: 100px;
+            margin: 10px;
+            padding: 8px;
+            background-color: #FFF;
+            color: #770FD6;
+            text-decoration: none;
+            font-family: Alata;
+            text-align: center;
+        }
+        .button:hover {
+            width: 100px;
+            margin: 10px;
+            padding: 8px;
+            background-color: #770FD6;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            font-family: Alata;
+            text-align: center;
+        }
+        .score {
+            color: #A3F711;
+            font-family: Alata;
+            display: inline-block;
+            float: right;
+            padding-right: 20px;
+        }
+        .user {
+            color: #A3F711;
+            font-family: Alata;
+            display: inline-block;
+            float: left;
+            padding-left: 20px;
+        }
+        </style>
+    </head>
+    <body>
+            <b>
+                <a class="button" href="holder" style="float:left"> Home </a>
+                <a class="button" href="holder" style="float: right"> Game </a>
+            </b>
+        <center>
+            <div class="leadersBox" style="color: #000; margin-top: 30px"> Leaderboard </div>
+            <div class="leadersBox"id="leaderList">
+                <div class="leader" id="1st">
+                    <div class="user" id="firstUser" href="/user1"><%= firstNameHTML %></div>
+                    <div class="score" id="firstScore" href="/score1"><%= firstScoreHTML %></div>
+                </div>
+                <div class="leader" id="2nd">
+                    <div class="user" id="secondUser" href="/user2"><%= secondNameHTML %></div>
+                    <div class="score" id="secondScore" href="/score2"><%= secondScoreHTML %></div>
+                </div>
+                <div class="leader" id="3rd">
+                    <div class="user" id="thirdUser" href="/user3"><%= thirdNameHTML %></div>
+                    <div class="score" id="thirdScore" href="/score3"><%= thirdScoreHTML %></div>
+                </div>
+                <div class="leader" id="4th">
+                    <div class="user" id="fourthUser" href="/user4"><%= fourthNameHTML %></div>
+                    <div class="score" id="fourthScore" href="/score4"><%= fourthScoreHTML %></div>
+                </div>
+                <div class="leader" id="5th">
+                    <div class="user" id="fifthUser" href="/user5"><%= fifthNameHTML %></div>
+                    <div class="score" id="fifthScore" href="/score5"><%= fifthScoreHTML %></div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
